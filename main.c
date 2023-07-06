@@ -8,5 +8,12 @@ int main(void) {
   printf("Input: ");
   fgets(frase, 50, stdin);
 
-  
+  tamanho = strlen(frase);
+
+  printf("Output: ");
+  for (i = (tamanho - 1); i >= 0; i--){
+    if(frase[i] == ' '){
+      frase[i] != '\0';
+    }
+  }
 }
