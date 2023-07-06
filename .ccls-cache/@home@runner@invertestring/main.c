@@ -11,9 +11,12 @@ int main(void) {
   tamanho = strlen(frase);
 
   printf("Output: ");
-  for (i = (tamanho - 1); i >= 0; i--){
-    if(frase[i] == ' '){
-      frase[i] != '\0';
+  for (i = (tamanho - 1); i >= 0; i--) {
+    if (frase[i] == ' ') {
+      frase[i] = '\0';
+      printf("%s", &frase[i]);
     }
   }
+  printf("%s", frase);
+  return 0;
 }
